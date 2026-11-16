@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#faf9f6"/>
+  <rect x="64" y="64" width="1072" height="502" rx="16" fill="#fcfbf8" stroke="#e5e2dc" stroke-width="2"/>
+
+  <rect x="112" y="116" width="56" height="56" rx="12" fill="#0f5c5c"/>
+  <text x="140" y="152" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#faf9f6">RN</text>
+
+  <text x="188" y="154" font-family="Inter, -apple-system, sans-serif" font-size="24" font-weight="600" fill="#14171a">changelog-software / Release-Notes</text>
+
+  <text x="112" y="254" font-family="Georgia, serif" font-size="60" fill="#14171a">Release Notes Templates</text>
+  <text x="112" y="324" font-family="Georgia, serif" font-size="60" fill="#0f5c5c">&amp; Free Generator</text>
+
+  <text x="112" y="392" font-family="Inter, -apple-system, sans-serif" font-size="24" fill="#4b5563">Word (.docx), Markdown, and Google Docs templates</text>
+  <text x="112" y="428" font-family="Inter, -apple-system, sans-serif" font-size="24" fill="#4b5563">for SaaS, desktop software, mobile apps, and internal releases.</text>
+
+  <rect x="112" y="476" width="180" height="44" rx="8" fill="#0f5c5c"/>
+  <text x="202" y="504" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#faf9f6">6 Free Templates</text>
+
+  <rect x="310" y="476" width="210" height="44" rx="8" fill="#faf9f6" stroke="#cfc9be" stroke-width="1.5"/>
+  <text x="415" y="504" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#14171a">Word .docx &amp; Markdown</text>
+
+  <rect x="538" y="476" width="200" height="44" rx="8" fill="#faf9f6" stroke="#cfc9be" stroke-width="1.5"/>
+  <text x="638" y="504" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#14171a">No Signup Required</text>
+</svg>

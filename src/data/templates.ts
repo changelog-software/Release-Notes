@@ -91,15 +91,15 @@ export const RELEASE_TEMPLATES: ReleaseTemplateMeta[] = [
       contactOrFeedback: 'Questions or feedback? Reach us at [support@company.com].',
     },
     exampleDoc: {
-      productName: 'Acme Analytics',
+      productName: 'Fieldwork Analytics',
       version: 'v2.4.0',
       releaseDate: '2026-11-12',
-      audience: 'All Acme Analytics workspaces',
+      audience: 'All Fieldwork Analytics workspaces',
       summary:
-        'Scheduled PDF board reports, faster funnel queries, and improved CSV export reliability.',
+        'Scheduled PDF board reports, faster 90-day funnel queries, and improved CSV export reliability.',
       highlights: [
         'Schedule weekly or monthly PDF reports straight to Slack or email.',
-        'Funnel conversion queries now load up to 3x faster on 90-day date ranges.',
+        'Pre-aggregated daily rollups keep 90-day funnel queries under 1.2s on 1M+ events.',
       ],
       items: [
         {
@@ -119,9 +119,9 @@ export const RELEASE_TEMPLATES: ReleaseTemplateMeta[] = [
         {
           id: 'saas-e-3',
           category: 'improved',
-          title: '3x Faster 90-Day Funnel Queries',
+          title: 'Faster 90-Day Funnel Queries',
           description:
-            'Pre-aggregated daily rollups reduce load times on multi-step funnels with more than 1M events.',
+            'Pre-aggregated daily rollups cut query time from 4.8s to 1.2s on multi-step funnels with more than 1M events.',
         },
         {
           id: 'saas-e-4',
@@ -139,7 +139,7 @@ export const RELEASE_TEMPLATES: ReleaseTemplateMeta[] = [
         },
       ],
       upgradeNotes: 'Rollout is complete for all workspaces. Refresh your browser tab to load v2.4.0.',
-      contactOrFeedback: 'Need help setting up scheduled reports? Email support@acmeanalytics.example.',
+      contactOrFeedback: 'Need help setting up scheduled reports? Email support@fieldwork.example.',
     },
   },
   {
@@ -298,9 +298,9 @@ export const RELEASE_TEMPLATES: ReleaseTemplateMeta[] = [
       releaseDate: '2026-11-14',
       audience: 'iOS 17+ and Android 13+ users',
       summary:
-        'Offline topo map downloads are now 2x faster, plus Apple Watch elevation alerts.',
+        'Offline topo map downloads with 40% smaller vector tiles, plus Apple Watch elevation alerts.',
       highlights: [
-        'Download full regional trail maps in half the time before heading off-grid.',
+        'Download full regional trail maps before heading off-grid with automatic resume.',
         'Apple Watch companion now alerts you when approaching steep elevation gain.',
       ],
       items: [
@@ -314,7 +314,7 @@ export const RELEASE_TEMPLATES: ReleaseTemplateMeta[] = [
         {
           id: 'mob-e-2',
           category: 'improved',
-          title: '2x Faster Offline Map Downloads',
+          title: 'Smaller Offline Map Downloads',
           description:
             'Compressed vector tiles cut download size by 40% and resume automatically if you lose signal.',
         },
@@ -575,7 +575,7 @@ export const RELEASE_TEMPLATES: ReleaseTemplateMeta[] = [
           description: '[Edge case fixed in API response or SDK types.]',
         },
       ],
-      upgradeNotes: '[SDK upgrade command, e.g., `npm install @acme/sdk@latest`]',
+      upgradeNotes: '[SDK upgrade command, e.g., `npm install @payflow/sdk@latest`]',
       contactOrFeedback: 'API Status & Docs: [https://developers.company.com]',
     },
     exampleDoc: {

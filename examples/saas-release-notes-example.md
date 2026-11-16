@@ -1,13 +1,13 @@
-# Acme Analytics v2.4.0
+# Fieldwork Analytics v2.4.0
 
-**Release Date:** 2026-11-12 | **Audience:** All Acme Analytics workspaces
+**Release Date:** 2026-11-12 | **Audience:** All Fieldwork Analytics workspaces
 
-Scheduled PDF board reports, faster funnel queries, and improved CSV export reliability.
+Scheduled PDF board reports, faster 90-day funnel queries, and improved CSV export reliability.
 
 ## Highlights
 
 - Schedule weekly or monthly PDF reports straight to Slack or email.
-- Funnel conversion queries now load up to 3x faster on 90-day date ranges.
+- Pre-aggregated daily rollups keep 90-day funnel queries under 1.2s on 1M+ events.
 
 ## New Features
 
@@ -16,7 +16,7 @@ Scheduled PDF board reports, faster funnel queries, and improved CSV export reli
 
 ## Improvements
 
-- **3x Faster 90-Day Funnel Queries**: Pre-aggregated daily rollups reduce load times on multi-step funnels with more than 1M events.
+- **Faster 90-Day Funnel Queries**: Pre-aggregated daily rollups cut query time from 4.8s to 1.2s on multi-step funnels with more than 1M events.
 
 ## Bug Fixes
 
@@ -29,4 +29,4 @@ Rollout is complete for all workspaces. Refresh your browser tab to load v2.4.0.
 
 ---
 
-Need help setting up scheduled reports? Email support@acmeanalytics.example.
+Need help setting up scheduled reports? Email support@fieldwork.example.

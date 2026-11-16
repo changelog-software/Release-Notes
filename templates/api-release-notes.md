@@ -27,7 +27,7 @@
 
 ## Upgrade & Deployment Notes
 
-[SDK upgrade command, e.g., `npm install @acme/sdk@latest`]
+[SDK upgrade command, e.g., `npm install @payflow/sdk@latest`]
 
 ---
 

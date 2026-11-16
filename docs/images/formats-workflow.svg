@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 280" fill="none">
+  <rect width="960" height="280" rx="12" fill="#faf9f6" stroke="#e5e2dc" stroke-width="1.5"/>
+
+  <!-- Step 1: Input -->
+  <rect x="36" y="48" width="250" height="184" rx="8" fill="#fcfbf8" stroke="#cfc9be" stroke-width="1.5"/>
+  <rect x="56" y="72" width="110" height="12" rx="3" fill="#0f5c5c"/>
+  <rect x="56" y="102" width="208" height="10" rx="2" fill="#e5e2dc"/>
+  <rect x="56" y="124" width="184" height="10" rx="2" fill="#e5e2dc"/>
+  <rect x="56" y="146" width="196" height="10" rx="2" fill="#e5e2dc"/>
+  <rect x="56" y="168" width="150" height="10" rx="2" fill="#e5e2dc"/>
+  <text x="56" y="210" font-family="Inter, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#14171a">1. Commits or Template</text>
+
+  <!-- Arrow 1 -->
+  <path d="M304 140h44" stroke="#0f5c5c" stroke-width="2" stroke-linecap="round"/>
+  <path d="M340 133l8 7-8 7" stroke="#0f5c5c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Step 2: Structured Document -->
+  <rect x="360" y="36" width="240" height="208" rx="8" fill="#fcfbf8" stroke="#0f5c5c" stroke-width="2"/>
+  <rect x="380" y="58" width="140" height="14" rx="3" fill="#14171a"/>
+  <rect x="380" y="84" width="84" height="8" rx="2" fill="#0f5c5c"/>
+  <circle cx="386" cy="108" r="3" fill="#0f5c5c"/>
+  <rect x="396" y="104" width="176" height="8" rx="2" fill="#4b5563"/>
+  <circle cx="386" cy="126" r="3" fill="#0f5c5c"/>
+  <rect x="396" y="122" width="152" height="8" rx="2" fill="#4b5563"/>
+  <rect x="380" y="148" width="76" height="8" rx="2" fill="#0f5c5c"/>
+  <circle cx="386" cy="172" r="3" fill="#4b5563"/>
+  <rect x="396" y="168" width="166" height="8" rx="2" fill="#9ca3af"/>
+  <text x="380" y="220" font-family="Inter, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#0f5c5c">2. Grouped &amp; Formatted</text>
+
+  <!-- Arrow 2 -->
+  <path d="M616 140h44" stroke="#0f5c5c" stroke-width="2" stroke-linecap="round"/>
+  <path d="M652 133l8 7-8 7" stroke="#0f5c5c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Step 3: Exports -->
+  <rect x="674" y="48" width="250" height="52" rx="8" fill="#fcfbf8" stroke="#cfc9be" stroke-width="1.5"/>
+  <rect x="692" y="64" width="20" height="20" rx="4" fill="#0f5c5c"/>
+  <text x="724" y="79" font-family="Inter, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#14171a">Microsoft Word (.docx)</text>
+
+  <rect x="674" y="114" width="250" height="52" rx="8" fill="#fcfbf8" stroke="#cfc9be" stroke-width="1.5"/>
+  <rect x="692" y="130" width="20" height="20" rx="4" fill="#14171a"/>
+  <text x="724" y="145" font-family="Inter, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#14171a">Markdown &amp; GitHub (.md)</text>
+
+  <rect x="674" y="180" width="250" height="52" rx="8" fill="#fcfbf8" stroke="#cfc9be" stroke-width="1.5"/>
+  <rect x="692" y="196" width="20" height="20" rx="4" fill="#0f5c5c" opacity="0.25"/>
+  <text x="724" y="211" font-family="Inter, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#14171a">Google Docs &amp; Notion</text>
+</svg>

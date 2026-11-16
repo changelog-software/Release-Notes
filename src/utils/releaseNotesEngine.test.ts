@@ -39,7 +39,7 @@ describe('releaseNotesEngine', () => {
     const saas = RELEASE_TEMPLATES[0];
     const md = renderMarkdown(saas.exampleDoc);
 
-    expect(md).toContain('# Acme Analytics v2.4.0');
+    expect(md).toContain('# Fieldwork Analytics v2.4.0');
     expect(md).toContain('**Release Date:** 2026-11-12');
     expect(md).toContain('## New Features');
     expect(md).toContain('## Bug Fixes');

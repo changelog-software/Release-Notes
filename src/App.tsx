@@ -113,6 +113,24 @@ export default function App() {
     }
   }
 
+  async function copyForGoogleDocs(html: string, plainText: string, key: string) {
+    try {
+      if (typeof ClipboardItem !== 'undefined' && navigator.clipboard?.write) {
+        const item = new ClipboardItem({
+          'text/html': new Blob([html], { type: 'text/html' }),
+          'text/plain': new Blob([plainText], { type: 'text/plain' }),
+        });
+        await navigator.clipboard.write([item]);
+      } else {
+        await navigator.clipboard.writeText(plainText);
+      }
+      setCopiedKey(key);
+      setTimeout(() => setCopiedKey((prev) => (prev === key ? null : prev)), 1800);
+    } catch {
+      await copyText(plainText, key);
+    }
+  }
+
   function loadIntoGenerator(sourceDoc: ReleaseNotesDocument) {
     setDoc(cloneDoc(sourceDoc));
     const el = document.getElementById('generator');
@@ -377,17 +395,29 @@ export default function App() {
                       <button
                         type="button"
                         onClick={() => copyText(galleryMarkdown, 'gallery-md')}
-                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded border text-xs font-medium"
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded border text-xs font-medium whitespace-nowrap"
                         style={{ borderColor: 'var(--border-strong)', backgroundColor: 'var(--bg-surface)' }}
                       >
                         {copiedKey === 'gallery-md' ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
                         {copiedKey === 'gallery-md' ? 'Copied' : 'Copy Markdown'}
                       </button>
 
+                      <button
+                        type="button"
+                        onClick={() =>
+                          copyForGoogleDocs(renderHtml(galleryDoc), galleryMarkdown, 'gallery-gdocs')
+                        }
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded border text-xs font-medium whitespace-nowrap"
+                        style={{ borderColor: 'var(--border-strong)', backgroundColor: 'var(--bg-surface)' }}
+                      >
+                        {copiedKey === 'gallery-gdocs' ? <Check className="w-3.5 h-3.5" /> : <FileText className="w-3.5 h-3.5" />}
+                        {copiedKey === 'gallery-gdocs' ? 'Copied for Docs' : 'Copy for Google Docs'}
+                      </button>
+
                       <a
                         href={`${import.meta.env.BASE_URL}downloads/${activeTemplate.slug}${galleryMode === 'example' ? '-example' : ''}.docx`}
                         download
-                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded border text-xs font-medium"
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded border text-xs font-medium whitespace-nowrap"
                         style={{ borderColor: 'var(--border-strong)', backgroundColor: 'var(--bg-surface)' }}
                       >
                         <Download className="w-3.5 h-3.5" />
@@ -411,7 +441,7 @@ export default function App() {
                     </p>
                     <pre
                       className="p-4 rounded-md text-xs leading-relaxed overflow-x-auto"
-                      style={{ backgroundColor: 'var(--bg-code)', color: '#e5e7eb' }}
+                      style={{ backgroundColor: 'var(--bg-code)', color: 'var(--code-text)' }}
                     >
                       <code>{galleryMarkdown}</code>
                     </pre>
@@ -694,7 +724,7 @@ export default function App() {
                     <button
                       type="button"
                       onClick={() => copyText(editorMarkdown, 'gen-md')}
-                      className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded border text-xs font-medium"
+                      className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded border text-xs font-medium whitespace-nowrap"
                       style={{ borderColor: 'var(--border-strong)', backgroundColor: 'var(--bg-surface)' }}
                     >
                       {copiedKey === 'gen-md' ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
@@ -703,12 +733,22 @@ export default function App() {
 
                     <button
                       type="button"
+                      onClick={() => copyForGoogleDocs(editorHtml, editorMarkdown, 'gen-gdocs')}
+                      className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded border text-xs font-medium whitespace-nowrap"
+                      style={{ borderColor: 'var(--border-strong)', backgroundColor: 'var(--bg-surface)' }}
+                    >
+                      <FileText className="w-3.5 h-3.5" />
+                      {copiedKey === 'gen-gdocs' ? 'Copied' : 'Google Docs'}
+                    </button>
+
+                    <button
+                      type="button"
                       onClick={() => copyText(editorHtml, 'gen-html')}
-                      className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded border text-xs font-medium"
+                      className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded border text-xs font-medium whitespace-nowrap"
                       style={{ borderColor: 'var(--border-strong)', backgroundColor: 'var(--bg-surface)' }}
                     >
                       <FileCode2 className="w-3.5 h-3.5" />
-                      {copiedKey === 'gen-html' ? 'Copied' : 'Copy HTML'}
+                      {copiedKey === 'gen-html' ? 'Copied' : 'HTML'}
                     </button>
 
                     <button
@@ -741,11 +781,10 @@ export default function App() {
                         <h3 className="text-xl font-bold">
                           {[doc.productName, doc.version].filter(Boolean).join(' ') || 'Release Notes'}
                         </h3>
-                        <p className="text-xs mt-1" style={{ color: 'var(--text-muted)' }}>
-                          {doc.releaseDate && `Release Date: ${doc.releaseDate}`}
-                          {doc.releaseDate && doc.audience && ' · '}
-                          {doc.audience && `Audience: ${doc.audience}`}
-                        </p>
+                        <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs mt-1" style={{ color: 'var(--text-muted)' }}>
+                          {doc.releaseDate && <span>Release Date: {doc.releaseDate}</span>}
+                          {doc.audience && <span>Audience: {doc.audience}</span>}
+                        </div>
                       </div>
 
                       {doc.summary && <p style={{ color: 'var(--text-secondary)' }}>{doc.summary}</p>}
@@ -792,7 +831,7 @@ export default function App() {
                   {previewTab === 'markdown' && (
                     <pre
                       className="p-4 rounded-md text-xs leading-relaxed overflow-x-auto"
-                      style={{ backgroundColor: 'var(--bg-code)', color: '#e5e7eb' }}
+                      style={{ backgroundColor: 'var(--bg-code)', color: 'var(--code-text)' }}
                     >
                       <code>{editorMarkdown}</code>
                     </pre>
@@ -801,7 +840,7 @@ export default function App() {
                   {previewTab === 'html' && (
                     <pre
                       className="p-4 rounded-md text-xs leading-relaxed overflow-x-auto"
-                      style={{ backgroundColor: 'var(--bg-code)', color: '#e5e7eb' }}
+                      style={{ backgroundColor: 'var(--bg-code)', color: 'var(--code-text)' }}
                     >
                       <code>{editorHtml}</code>
                     </pre>
@@ -814,10 +853,33 @@ export default function App() {
 
         {/* Writing Guide */}
         <section id="guide" className="py-12 md:py-16 border-b" style={{ borderColor: 'var(--border-subtle)' }}>
-          <div className="max-w-6xl mx-auto px-5 space-y-6">
-            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">
-              How to Write Clear Release Notes
-            </h2>
+          <div className="max-w-6xl mx-auto px-5 space-y-8">
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+              <div className="space-y-1.5">
+                <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">
+                  How to Write Clear Release Notes
+                </h2>
+                <p className="text-sm md:text-base" style={{ color: 'var(--text-secondary)' }}>
+                  Turn raw commits into structured updates for Word, Markdown, or Google Docs.
+                </p>
+              </div>
+              <a
+                href={`${import.meta.env.BASE_URL}guides/how-to-write-release-notes/`}
+                className="text-sm font-medium hover:underline whitespace-nowrap"
+                style={{ color: 'var(--accent)' }}
+              >
+                Read full format guide
+              </a>
+            </div>
+
+            <img
+              src={`${import.meta.env.BASE_URL}images/formats-workflow.svg`}
+              alt="Workflow showing commits or template input converted into structured release notes for Word, Markdown, and Google Docs"
+              className="w-full h-auto rounded-lg"
+              width={960}
+              height={280}
+            />
+
             <div className="grid md:grid-cols-3 gap-5">
               <div
                 className="p-5 rounded-lg border space-y-2"
@@ -851,7 +913,7 @@ export default function App() {
         </section>
 
         {/* Release Notes vs Changelog */}
-        <section id="vs-changelog" className="py-12 md:py-16">
+        <section id="vs-changelog" className="py-12 md:py-16 border-b" style={{ borderColor: 'var(--border-subtle)' }}>
           <div className="max-w-6xl mx-auto px-5 space-y-6">
             <div className="space-y-2 max-w-2xl">
               <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">
@@ -861,6 +923,14 @@ export default function App() {
                 Teams often use both: a changelog for a complete chronological record, and release notes for curated version announcements.
               </p>
             </div>
+
+            <img
+              src={`${import.meta.env.BASE_URL}images/release-notes-vs-changelog.svg`}
+              alt="Comparison of Release Notes and Changelog across audience, focus, tone, and output formats"
+              className="w-full h-auto rounded-lg"
+              width={960}
+              height={300}
+            />
 
             <div
               className="rounded-lg border overflow-x-auto"
@@ -900,6 +970,44 @@ export default function App() {
             </div>
           </div>
         </section>
+
+        {/* FAQ */}
+        <section id="faq" className="py-12 md:py-16">
+          <div className="max-w-6xl mx-auto px-5 space-y-6">
+            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">
+              Frequently Asked Questions
+            </h2>
+            <div className="grid md:grid-cols-3 gap-5">
+              <div
+                className="p-5 rounded-lg border space-y-2"
+                style={{ backgroundColor: 'var(--bg-surface)', borderColor: 'var(--border-subtle)' }}
+              >
+                <h3 className="font-semibold text-base">How do I use these in Google Docs or Word?</h3>
+                <p className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+                  Download any .docx file for Microsoft Word or Google Drive, or click Copy for Google Docs to paste formatted headings and lists directly.
+                </p>
+              </div>
+              <div
+                className="p-5 rounded-lg border space-y-2"
+                style={{ backgroundColor: 'var(--bg-surface)', borderColor: 'var(--border-subtle)' }}
+              >
+                <h3 className="font-semibold text-base">What is the difference from a changelog?</h3>
+                <p className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+                  Release notes are curated for users and stakeholders. A changelog is a complete chronological log of technical changes.
+                </p>
+              </div>
+              <div
+                className="p-5 rounded-lg border space-y-2"
+                style={{ backgroundColor: 'var(--bg-surface)', borderColor: 'var(--border-subtle)' }}
+              >
+                <h3 className="font-semibold text-base">Is any signup or account required?</h3>
+                <p className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+                  No. Templates, examples, and Word (.docx) or Markdown exports run locally in your browser.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       {/* Footer */}
@@ -909,17 +1017,23 @@ export default function App() {
       >
         <div className="max-w-6xl mx-auto px-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div>
-            <strong>Release Notes Templates &amp; Generator</strong> — MIT License · Open-source templates for software teams.
+            <strong>Release Notes Templates &amp; Generator</strong> (MIT License)
           </div>
           <div className="flex flex-wrap items-center gap-4">
             <a href="https://github.com/changelog-software/Release-Notes" target="_blank" rel="noreferrer" className="hover:underline">
               GitHub Repository
+            </a>
+            <a href={`${import.meta.env.BASE_URL}examples/`} className="hover:underline">
+              Examples
             </a>
             <a href={`${import.meta.env.BASE_URL}templates/saas-release-notes/`} className="hover:underline">
               SaaS Template
             </a>
             <a href={`${import.meta.env.BASE_URL}templates/software-release-notes/`} className="hover:underline">
               Software Template
+            </a>
+            <a href={`${import.meta.env.BASE_URL}guides/how-to-write-release-notes/`} className="hover:underline">
+              Format Guide
             </a>
             <a href={`${import.meta.env.BASE_URL}guides/release-notes-vs-changelog/`} className="hover:underline">
               Release Notes vs Changelog

@@ -2,11 +2,11 @@
 
 **Release Date:** 2026-11-14 | **Audience:** iOS 17+ and Android 13+ users
 
-Offline topo map downloads are now 2x faster, plus Apple Watch elevation alerts.
+Offline topo map downloads with 40% smaller vector tiles, plus Apple Watch elevation alerts.
 
 ## Highlights
 
-- Download full regional trail maps in half the time before heading off-grid.
+- Download full regional trail maps before heading off-grid with automatic resume.
 - Apple Watch companion now alerts you when approaching steep elevation gain.
 
 ## New Features
@@ -15,7 +15,7 @@ Offline topo map downloads are now 2x faster, plus Apple Watch elevation alerts.
 
 ## Improvements
 
-- **2x Faster Offline Map Downloads**: Compressed vector tiles cut download size by 40% and resume automatically if you lose signal.
+- **Smaller Offline Map Downloads**: Compressed vector tiles cut download size by 40% and resume automatically if you lose signal.
 
 ## Bug Fixes
 
