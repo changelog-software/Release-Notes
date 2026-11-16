@@ -1,0 +1,30 @@
+{
+  "name": "release-notes-templates",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Free release notes templates for software, SaaS products, mobile apps, and internal releases. Download Word (.docx), copy Markdown, or generate release notes from your changes.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build && node scripts/generate-seo-pages.mjs",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "generate:assets": "node scripts/generate-templates.mjs"
+  },
+  "dependencies": {
+    "docx": "^9.1.1",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.6.3",
+    "vite": "^6.0.3",
+    "vitest": "^2.1.8"
+  }
+}
