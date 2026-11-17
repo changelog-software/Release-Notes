@@ -872,13 +872,22 @@ export default function App() {
               </a>
             </div>
 
-            <img
-              src={`${import.meta.env.BASE_URL}images/formats-workflow.svg`}
-              alt="Workflow showing commits or template input converted into structured release notes for Word, Markdown, and Google Docs"
-              className="w-full h-auto rounded-lg"
-              width={960}
-              height={280}
-            />
+            <div className="grid md:grid-cols-2 gap-5">
+              <img
+                src={`${import.meta.env.BASE_URL}images/formats-workflow.svg`}
+                alt="Workflow showing commits or template input converted into structured release notes for Word, Markdown, and Google Docs"
+                className="w-full h-auto rounded-lg"
+                width={960}
+                height={280}
+              />
+              <img
+                src={`${import.meta.env.BASE_URL}images/docx-preview.svg`}
+                alt="Preview of the formatted Microsoft Word (.docx) release notes document"
+                className="w-full h-auto rounded-lg"
+                width={960}
+                height={420}
+              />
+            </div>
 
             <div className="grid md:grid-cols-3 gap-5">
               <div

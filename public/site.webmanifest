@@ -1,0 +1,21 @@
+{
+  "name": "Release Notes Templates & Generator",
+  "short_name": "Release Notes",
+  "description": "Free release notes templates for software, SaaS, mobile apps, and internal releases with Word (.docx), Google Docs, and Markdown export.",
+  "start_url": "/Release-Notes/",
+  "display": "standalone",
+  "background_color": "#faf9f6",
+  "theme_color": "#0f5c5c",
+  "icons": [
+    {
+      "src": "/Release-Notes/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/Release-Notes/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

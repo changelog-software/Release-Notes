@@ -15,7 +15,7 @@ function escapeHtml(str) {
     .replaceAll('"', '&quot;');
 }
 
-function pageShell({ title, description, canonicalPath, bodyHtml, schemaList, inlineScript = '' }) {
+function pageShell({ title, description, canonicalPath, bodyHtml, schemaList, inlineScript = '', ogImage = `${BASE_URL}/og-image.png` }) {
   const canonicalUrl = `${BASE_URL}${canonicalPath}`;
   const schemasHtml = schemaList
     .map((s) => `<script type="application/ld+json">${JSON.stringify(s)}</script>`)
@@ -29,18 +29,21 @@ function pageShell({ title, description, canonicalPath, bodyHtml, schemaList, in
     <title>${escapeHtml(title)}</title>
     <meta name="description" content="${escapeHtml(description)}" />
     <link rel="icon" type="image/svg+xml" href="${BASE_URL}/favicon.svg" />
+    <link rel="icon" href="${BASE_URL}/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="${BASE_URL}/apple-touch-icon.png" />
+    <link rel="manifest" href="${BASE_URL}/site.webmanifest" />
     <link rel="canonical" href="${canonicalUrl}" />
     <meta property="og:title" content="${escapeHtml(title)}" />
     <meta property="og:description" content="${escapeHtml(description)}" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="${canonicalUrl}" />
-    <meta property="og:image" content="${BASE_URL}/og-image.png" />
+    <meta property="og:image" content="${ogImage}" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="${escapeHtml(title)}" />
     <meta name="twitter:description" content="${escapeHtml(description)}" />
-    <meta name="twitter:image" content="${BASE_URL}/og-image.png" />
+    <meta name="twitter:image" content="${ogImage}" />
     ${schemasHtml}
     <style>
       /* Hallmark · v2.0.0 — Editorial-Utilitarian Paper & Teal SEO Page */
@@ -296,6 +299,7 @@ async function main() {
           ]),
         ],
         inlineScript: copyScript,
+        ogImage: `${BASE_URL}/og/${tpl.slug}.png`,
       }),
     );
   }

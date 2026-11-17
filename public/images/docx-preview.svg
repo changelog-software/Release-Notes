@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" fill="none">
+  <rect width="960" height="420" rx="12" fill="#faf9f6" stroke="#e5e2dc" stroke-width="1.5"/>
+
+  <!-- Word Document Sheet -->
+  <rect x="140" y="28" width="680" height="364" rx="8" fill="#fcfbf8" stroke="#cfc9be" stroke-width="1.5"/>
+
+  <!-- Document Header -->
+  <text x="184" y="76" font-family="Georgia, serif" font-size="26" font-weight="700" fill="#14171a">Fieldwork Analytics v2.4.0</text>
+  <text x="184" y="102" font-family="Inter, -apple-system, sans-serif" font-size="13" fill="#4b5563">Release Date: 2026-11-12   |   Audience: All Fieldwork Analytics workspaces</text>
+  <line x1="184" y1="118" x2="776" y2="118" stroke="#e5e2dc" stroke-width="1.5"/>
+
+  <!-- Summary -->
+  <text x="184" y="144" font-family="Inter, -apple-system, sans-serif" font-size="13.5" fill="#14171a">Scheduled PDF board reports, faster 90-day funnel queries, and improved CSV export reliability.</text>
+
+  <!-- Section: New Features -->
+  <text x="184" y="184" font-family="Inter, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#0f5c5c">New Features</text>
+  <circle cx="192" cy="208" r="3" fill="#0f5c5c"/>
+  <text x="206" y="212" font-family="Inter, -apple-system, sans-serif" font-size="13" fill="#14171a"><tspan font-weight="700">Scheduled PDF &amp; Slack Reports:</tspan> Open any dashboard, click Share -&gt; Schedule, and choose cadence.</text>
+  <circle cx="192" cy="232" r="3" fill="#0f5c5c"/>
+  <text x="206" y="236" font-family="Inter, -apple-system, sans-serif" font-size="13" fill="#14171a"><tspan font-weight="700">Workspace Role Templates:</tspan> Assign Analyst, Editor, or Billing-Only presets when inviting teammates.</text>
+
+  <!-- Section: Improvements -->
+  <text x="184" y="274" font-family="Inter, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#0f5c5c">Improvements</text>
+  <circle cx="192" cy="298" r="3" fill="#4b5563"/>
+  <text x="206" y="302" font-family="Inter, -apple-system, sans-serif" font-size="13" fill="#14171a"><tspan font-weight="700">Faster 90-Day Funnel Queries:</tspan> Daily rollups cut query time from 4.8s to 1.2s on 1M+ events.</text>
+
+  <!-- Section: Bug Fixes -->
+  <text x="184" y="340" font-family="Inter, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#0f5c5c">Bug Fixes</text>
+  <circle cx="192" cy="364" r="3" fill="#4b5563"/>
+  <text x="206" y="368" font-family="Inter, -apple-system, sans-serif" font-size="13" fill="#14171a"><tspan font-weight="700">UTF-8 Characters in CSV Exports:</tspan> Fixed accented and CJK text rendering in Excel.</text>
+</svg>

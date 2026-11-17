@@ -37,6 +37,8 @@ Each template is available as a ready-to-use **Markdown (`.md`)** file, a format
 - **Google Docs**: Click **Copy for Google Docs** on the [live site](https://changelog-software.github.io/Release-Notes/) to paste formatted headings, bold titles, and bullet lists straight into Google Docs, or upload any `.docx` file to Google Drive.
 - **Markdown / GitHub Releases**: Copy any `.md` file from [`templates/`](templates/) or click **Copy Markdown** in the generator.
 
+![Formatted Microsoft Word (.docx) release notes document preview](docs/images/docx-preview.svg)
+
 ---
 
 ## Sample Release Notes (Filled-In SaaS Example)
@@ -74,6 +76,8 @@ See all 6 filled-in examples in [`examples/`](examples/) or on the [Examples pag
 ## Free Release Notes Generator
 
 Use the browser-based generator at **https://changelog-software.github.io/Release-Notes/#generator**:
+
+![Release Notes Generator two-column editor and live export preview](docs/images/generator-preview.svg)
 
 1. Pick a template (SaaS, Software, Mobile, Internal, Enterprise, or API) or paste raw `git log` / PR titles (`feat:`, `fix:`, `perf:`, `security:`, `BREAKING CHANGE:`).
 2. Edit version, date, summary, and grouped items in the live editor.
