@@ -53,7 +53,7 @@ export const RELEASE_TEMPLATES: ReleaseTemplateMeta[] = [
     seoTitle: 'SaaS Release Notes Template (Free Word & Markdown) | Release Notes',
     seoDescription:
       'Free SaaS release notes template with real filled-in examples. Copy Markdown, download a formatted Word (.docx) file, or generate your own release notes.',
-    h1: 'SaaS Release Notes Template',
+    h1: 'SaaS release notes template',
     intro:
       'Built for customer-facing web applications. Leads with user value, groups changes into New Features, Improvements, and Bug Fixes, and avoids internal engineering jargon.',
     templateDoc: {
@@ -151,7 +151,7 @@ export const RELEASE_TEMPLATES: ReleaseTemplateMeta[] = [
     seoTitle: 'Software Release Notes Template (Word .docx & Markdown)',
     seoDescription:
       'Download a clean software release notes template in Word (.docx) or Markdown. Includes system requirements, upgrade instructions, and known issues.',
-    h1: 'Software Release Notes Template',
+    h1: 'Software release notes template',
     intro:
       'A structured release notes document template for desktop, CLI, or self-hosted software. Covers version metadata, new capabilities, bug fixes, known issues, and upgrade steps.',
     templateDoc: {
@@ -256,7 +256,7 @@ export const RELEASE_TEMPLATES: ReleaseTemplateMeta[] = [
     seoTitle: 'Mobile App Release Notes Template (iOS & Android)',
     seoDescription:
       'Copy-ready mobile app release notes template for App Store and Google Play. Short, scannable, user-friendly format with real examples.',
-    h1: 'Mobile App Release Notes Template',
+    h1: 'Mobile app release notes template',
     intro:
       'Designed for App Store and Google Play character limits and mobile scanning. Short, friendly, and focused on what changed for someone holding their phone.',
     templateDoc: {
@@ -339,7 +339,7 @@ export const RELEASE_TEMPLATES: ReleaseTemplateMeta[] = [
     seoTitle: 'Internal Release Notes Template for Engineering & QA Teams',
     seoDescription:
       'Structured internal release notes template for engineering, QA, and DevOps teams. Includes PR references, migrations, feature flags, and rollback notes.',
-    h1: 'Internal Release Notes Template',
+    h1: 'Internal release notes template',
     intro:
       'Built for engineering, QA, and support teams. Tracks pull requests, database migrations, feature flags, environment config changes, and rollback steps.',
     templateDoc: {
@@ -439,9 +439,9 @@ export const RELEASE_TEMPLATES: ReleaseTemplateMeta[] = [
     seoTitle: 'Enterprise Release Notes Template for B2B & IT Admins',
     seoDescription:
       'Formal enterprise release notes template covering security compliance, SSO/SCIM updates, audit logs, and admin action items.',
-    h1: 'Enterprise Release Notes Template',
+    h1: 'Enterprise release notes template',
     intro:
-      'Tailored for enterprise customers, IT administrators, and security reviewers. Highlights governance, SSO/SCIM changes, auditability, and required admin actions.',
+      'For enterprise customers, IT administrators, and security reviewers. Covers governance, SSO and SCIM changes, audit logs, and required admin actions.',
     templateDoc: {
       productName: '[Enterprise Platform]',
       version: 'v[X.Y.Z] (Q[N] Release)',
@@ -536,7 +536,7 @@ export const RELEASE_TEMPLATES: ReleaseTemplateMeta[] = [
     seoTitle: 'API & SDK Release Notes Template (with Breaking Changes)',
     seoDescription:
       'Developer-focused API and SDK release notes template with endpoints, deprecation timelines, breaking changes, and migration snippets.',
-    h1: 'API & SDK Release Notes Template',
+    h1: 'API and SDK release notes template',
     intro:
       'Built for external developers consuming your API or SDK. Clearly separates additive endpoints from breaking changes, deprecations, and migration timelines.',
     templateDoc: {
@@ -632,7 +632,7 @@ export const RELEASE_TEMPLATES: ReleaseTemplateMeta[] = [
     seoTitle: 'Release Notes Template Word (.docx): Free Download & Examples',
     seoDescription:
       'Download a clean, formatted release notes template for Microsoft Word (.docx). Includes blank placeholders, filled-in sample, and instant Word export.',
-    h1: 'Release Notes Template for Microsoft Word (.docx)',
+    h1: 'Release notes template for Microsoft Word (.docx)',
     intro:
       'Formatted for Microsoft Word with clean Heading 1/2 hierarchy, metadata border, and scannable bullet lists. Download the .docx directly or customize it in the browser.',
     templateDoc: {
@@ -714,7 +714,7 @@ export const RELEASE_TEMPLATES: ReleaseTemplateMeta[] = [
     seoTitle: 'Google Docs Release Notes Template (Copy-Paste & .docx Upload)',
     seoDescription:
       'Copy formatted release notes directly into Google Docs with one click, or download a .docx template ready for Google Drive.',
-    h1: 'Google Docs Release Notes Template',
+    h1: 'Google Docs release notes template',
     intro:
       'Built for teams collaborating in Google Drive. Use the Copy for Google Docs button to paste real H1/H2 headings and bullet lists without losing formatting.',
     templateDoc: {
@@ -794,9 +794,9 @@ export const RELEASE_TEMPLATES: ReleaseTemplateMeta[] = [
     seoTitle: 'iOS App Store Release Notes Template ("What\'s New" Examples)',
     seoDescription:
       'Copy-ready iOS App Store release notes templates that fit Apple\'s What\'s New section. Clear, concise, and user-friendly examples.',
-    h1: 'iOS App Store Release Notes Template',
+    h1: 'iOS App Store release notes template',
     intro:
-      'Crafted for Apple App Store Connect "What\'s New" updates. Short, readable on an iPhone screen, and free of vague "bug fixes and performance improvements" filler.',
+      'Written for Apple App Store Connect "What\'s New" updates. It stays short, reads easily on a phone screen, and avoids vague "bug fixes and performance improvements" filler.',
     templateDoc: {
       productName: '[iOS App Name]',
       version: 'v[X.Y.Z]',
@@ -873,7 +873,7 @@ export const RELEASE_TEMPLATES: ReleaseTemplateMeta[] = [
     seoTitle: 'Android Google Play Release Notes Template (500-Char Ready)',
     seoDescription:
       'Concise Android release notes template formatted for Google Play Console\'s 500-character limit, with real filled-in examples.',
-    h1: 'Android Google Play Release Notes Template',
+    h1: 'Android Google Play release notes template',
     intro:
       'Sized for Google Play Console\'s 500-character "What\'s new" box while also giving you a full Markdown and Word version for your help center.',
     templateDoc: {
@@ -946,7 +946,7 @@ export const RELEASE_TEMPLATES: ReleaseTemplateMeta[] = [
     seoTitle: 'Agile Sprint Release Notes Template (Word & Markdown)',
     seoDescription:
       'Download an Agile sprint release notes template for Scrum teams. Summarize completed stories, bug fixes, and next-sprint carryover in minutes.',
-    h1: 'Agile Sprint Release Notes Template',
+    h1: 'Agile sprint release notes template',
     intro:
       'Designed for Scrum and Kanban teams wrapping up a sprint. Summarizes shipped stories, resolved defects, and staging verification for stakeholders.',
     templateDoc: {
@@ -1026,7 +1026,7 @@ export const RELEASE_TEMPLATES: ReleaseTemplateMeta[] = [
     seoTitle: 'QA Release Notes Template (Build Handoff & Test Scope)',
     seoDescription:
       'Structured QA release notes template for build handoffs, test environments, resolved defects, and regression scope.',
-    h1: 'QA & Testing Release Notes Template',
+    h1: 'QA and testing release notes template',
     intro:
       'Built for developer-to-QA handoffs and UAT sign-off. Documents build numbers, environment URLs, fixed tickets ready for verification, and regression areas.',
     templateDoc: {
@@ -1098,7 +1098,7 @@ export const RELEASE_TEMPLATES: ReleaseTemplateMeta[] = [
     seoTitle: 'GitHub Release Notes Template (Markdown & Conventional Commits)',
     seoDescription:
       'Markdown release notes template designed for GitHub Releases, open-source packages, and CLI tools with contributor credits and upgrade commands.',
-    h1: 'GitHub Release Notes Template',
+    h1: 'GitHub release notes template',
     intro:
       'Formatted specifically for the GitHub Releases page. Groups changes cleanly, highlights breaking changes first, and gives package upgrade commands.',
     templateDoc: {
@@ -1177,7 +1177,7 @@ export const RELEASE_TEMPLATES: ReleaseTemplateMeta[] = [
     seoTitle: 'Release Notes Email Template (Customer Product Update)',
     seoDescription:
       'Copy-ready customer release notes email template. Short, benefit-driven structure for monthly product update newsletters.',
-    h1: 'Customer Release Notes Email Template',
+    h1: 'Customer release notes email template',
     intro:
       'Written for customer inboxes. Focuses on one headline benefit, 2-3 scannable improvements, and a single call-to-action link back to your app.',
     templateDoc: {
@@ -1243,7 +1243,7 @@ export const RELEASE_TEMPLATES: ReleaseTemplateMeta[] = [
         },
       ],
       upgradeNotes: 'Log in to your workspace to schedule your first report.',
-      contactOrFeedback: 'Hit reply anytime — our product team reads every message.',
+      contactOrFeedback: 'Hit reply anytime. Our product team reads every message.',
     },
   },
 ];

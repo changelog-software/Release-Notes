@@ -26,4 +26,4 @@ Log in to your workspace to schedule your first report.
 
 ---
 
-Hit reply anytime — our product team reads every message.
+Hit reply anytime. Our product team reads every message.

@@ -242,7 +242,7 @@ export default function App() {
           <div className="max-w-6xl mx-auto px-5 grid md:grid-cols-12 gap-8 items-center">
             <div className="md:col-span-7 space-y-5">
               <h1 className="text-4xl md:text-5xl leading-[1.08] tracking-tight font-normal">
-                Release Notes Templates and Generator
+                Release notes templates and generator
               </h1>
               <p className="text-base md:text-lg leading-relaxed max-w-xl" style={{ color: 'var(--text-secondary)' }}>
                 Free release notes templates for software, SaaS products, mobile apps, and internal releases. Download Word (.docx) templates, copy Markdown examples, or generate release notes from your changes without signing up.
@@ -286,19 +286,19 @@ export default function App() {
                 <ul className="space-y-2.5 text-sm">
                   <li className="flex items-start gap-2.5">
                     <Check className="w-4 h-4 mt-0.5 shrink-0" style={{ color: 'var(--accent)' }} />
-                    <span><strong>Word (.docx) &amp; Google Docs</strong> — formatted templates and instant export</span>
+                    <span>Formatted Word (.docx) and Google Docs templates with instant export</span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <Check className="w-4 h-4 mt-0.5 shrink-0" style={{ color: 'var(--accent)' }} />
-                    <span><strong>Markdown &amp; HTML</strong> — copy-ready for GitHub Releases, Notion, or Confluence</span>
+                    <span>Markdown and HTML output ready for GitHub Releases, Notion, or Confluence</span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <Check className="w-4 h-4 mt-0.5 shrink-0" style={{ color: 'var(--accent)' }} />
-                    <span><strong>Filled-in examples</strong> — realistic SaaS, desktop, mobile, internal, enterprise, and API notes</span>
+                    <span>Filled-in examples for SaaS, desktop, mobile, internal, enterprise, and API updates</span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <Check className="w-4 h-4 mt-0.5 shrink-0" style={{ color: 'var(--accent)' }} />
-                    <span><strong>Commit parser</strong> — paste git log lines and sort into features, fixes, and breaking changes</span>
+                    <span>Commit parser that sorts git log lines into features, fixes, and breaking changes</span>
                   </li>
                 </ul>
               </div>
@@ -312,7 +312,7 @@ export default function App() {
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
               <div className="space-y-2 max-w-2xl">
                 <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">
-                  Release Notes Templates &amp; Sample Formats
+                  Release notes templates and sample formats
                 </h2>
                 <p className="text-sm md:text-base" style={{ color: 'var(--text-secondary)' }}>
                   Pick the format that fits your audience. Switch between a real filled-in example and a blank template, then download Word (.docx) or copy Markdown.
@@ -458,7 +458,7 @@ export default function App() {
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
               <div className="space-y-1.5">
                 <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">
-                  Free Release Notes Generator
+                  Free release notes generator
                 </h2>
                 <p className="text-sm md:text-base" style={{ color: 'var(--text-secondary)' }}>
                   Edit fields below or paste git commits to auto-categorize changes. Export to Word (.docx), Markdown, or Google Docs HTML.
@@ -857,7 +857,7 @@ export default function App() {
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
               <div className="space-y-1.5">
                 <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">
-                  How to Write Clear Release Notes
+                  How to write clear release notes
                 </h2>
                 <p className="text-sm md:text-base" style={{ color: 'var(--text-secondary)' }}>
                   Turn raw commits into structured updates for Word, Markdown, or Google Docs.
@@ -926,7 +926,7 @@ export default function App() {
           <div className="max-w-6xl mx-auto px-5 space-y-6">
             <div className="space-y-2 max-w-2xl">
               <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">
-                Release Notes vs. Changelog
+                Release notes vs. changelog
               </h2>
               <p className="text-sm md:text-base" style={{ color: 'var(--text-secondary)' }}>
                 Teams often use both: a changelog for a complete chronological record, and release notes for curated version announcements.
@@ -984,7 +984,7 @@ export default function App() {
         <section id="faq" className="py-12 md:py-16">
           <div className="max-w-6xl mx-auto px-5 space-y-6">
             <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">
-              Frequently Asked Questions
+              Frequently asked questions
             </h2>
             <div className="grid md:grid-cols-3 gap-5">
               <div

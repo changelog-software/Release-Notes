@@ -355,7 +355,7 @@ async function main() {
       canonicalPath: examplesPath,
       bodyHtml: `
         <p class="meta-row"><span><a href="${BASE_URL}/">Home</a> / Examples</span></p>
-        <h1>Sample Release Notes &amp; Real Examples</h1>
+        <h1>Sample release notes and real examples</h1>
         <p>Filled-in release notes samples you can adapt for your next launch, sprint review, or app store update.</p>
         ${examplesCards}
       `,
@@ -383,12 +383,12 @@ async function main() {
     await writePage(
       `examples/${tpl.slug}-example/index.html`,
       pageShell({
-        title: `${tpl.exampleDoc.productName} ${tpl.exampleDoc.version} — ${tpl.shortName} Release Notes Example`,
+        title: `${tpl.exampleDoc.productName} ${tpl.exampleDoc.version}: ${tpl.shortName} release notes example`,
         description: `Real filled-in ${tpl.shortName.toLowerCase()} release notes sample (${tpl.exampleDoc.productName} ${tpl.exampleDoc.version}). Copy Markdown, Google Docs, or download Word (.docx).`,
         canonicalPath: exPath,
         bodyHtml: `
           <p class="meta-row"><span><a href="${BASE_URL}/">Home</a> / <a href="${BASE_URL}/examples/">Examples</a> / ${escapeHtml(tpl.shortName)}</span></p>
-          <h1>${escapeHtml(tpl.shortName)} Release Notes Example: ${escapeHtml(tpl.exampleDoc.productName)} ${escapeHtml(tpl.exampleDoc.version)}</h1>
+          <h1>${escapeHtml(tpl.shortName)} release notes example: ${escapeHtml(tpl.exampleDoc.productName)} ${escapeHtml(tpl.exampleDoc.version)}</h1>
           <p>${escapeHtml(tpl.intro)}</p>
           <div class="actions">
             <a class="btn btn-primary" href="${BASE_URL}/downloads/${tpl.slug}-example.docx" download>Download Sample (.docx)</a>
@@ -431,12 +431,12 @@ async function main() {
       title: 'Release Notes Format & How to Write Clear Release Notes',
       description:
         'Standard release notes format with sections, examples, and a checklist for software, SaaS, mobile apps, and internal teams.',
-      h1: 'Release Notes Format & Writing Guide',
+      h1: 'Release notes format and writing guide',
       body: `
         <p>A consistent release notes format helps customers, support teams, and administrators see what changed and whether they need to act.</p>
         <img class="diagram" src="${BASE_URL}/images/formats-workflow.svg" alt="Workflow from commits or template to Word, Markdown, and Google Docs" width="960" height="280" />
         <section class="card">
-          <h2>Standard Sections in a Release Notes Document</h2>
+          <h2>Standard sections in a release notes document</h2>
           <ol>
             <li><strong>Header metadata</strong>: Product name, version number, release date, and target audience.</li>
             <li><strong>One-sentence summary</strong>: The main user benefit or scope of the release.</li>
@@ -452,7 +452,7 @@ async function main() {
       title: 'Release Notes vs. Changelog: Key Differences & Templates',
       description:
         'Understand the difference between release notes and a changelog, when to use each, and download free Word and Markdown templates.',
-      h1: 'Release Notes vs. Changelog',
+      h1: 'Release notes vs. changelog',
       body: `
         <p>Both document product changes, but they serve different readers and workflows. Use release notes for curated, user-facing announcements and a changelog for a complete chronological record.</p>
         <img class="diagram" src="${BASE_URL}/images/release-notes-vs-changelog.svg" alt="Comparison between Release Notes and Changelog" width="960" height="300" />
@@ -476,7 +476,7 @@ async function main() {
       title: 'Release Notes Document Format (Word, Markdown & Google Docs)',
       description:
         'Choose the right release notes document format for your team: Word (.docx), Google Docs, Markdown, or HTML email.',
-      h1: 'Release Notes Document Format Guide',
+      h1: 'Release notes document format guide',
       body: `
         <p>The best release notes document format depends on where your audience reads updates and who reviews drafts before publishing.</p>
         <img class="diagram" src="${BASE_URL}/images/docx-preview.svg" alt="Preview of a formatted Word (.docx) release notes document" width="960" height="420" />
@@ -500,11 +500,11 @@ async function main() {
       title: 'How to Turn Git Commits into Customer Release Notes',
       description:
         'Convert Conventional Commits (feat, fix, perf, BREAKING CHANGE) into clean, user-facing release notes in seconds.',
-      h1: 'Turning Git Commits into Release Notes',
+      h1: 'Turning git commits into release notes',
       body: `
-        <p>Raw commit logs are written for developers, not end users. Grouping commits by prefix lets you draft structured release notes without starting from a blank page.</p>
+        <p>Commit logs describe code changes for engineers. Grouping commits by prefix lets you draft user-facing release notes without starting from a blank page.</p>
         <section class="card">
-          <h2>Prefix Mapping Used by the Free Generator</h2>
+          <h2>Prefix mapping used by the free generator</h2>
           <table>
             <thead>
               <tr><th>Commit Prefix</th><th>Release Notes Section</th><th>Example Input</th></tr>
@@ -563,7 +563,7 @@ async function main() {
       title: 'Release Notes & Changelog Tool Alternatives (Free & Open Source)',
       description:
         'Compare free release notes templates and browser generators against GitHub Gist snippets, Smartsheet/Atlassian templates, and paid changelog SaaS tools.',
-      h1: 'Release Notes & Changelog Tool Alternatives',
+      h1: 'Release notes and changelog tool alternatives',
       breadcrumb: 'Alternatives',
       body: `
         <p>Teams looking for a release notes template or changelog tool usually choose between static documents, project suites, or paid SaaS widgets. Here is how they compare.</p>
@@ -579,7 +579,7 @@ async function main() {
       title: 'Alternative to Static GitHub Gist Release Notes Templates',
       description:
         'Get more than a single raw Markdown gist: 14 templates, real filled-in examples, Word (.docx) downloads, Google Docs copy, and a free generator.',
-      h1: 'Beyond a Single GitHub Gist Template',
+      h1: 'Beyond a single GitHub Gist template',
       breadcrumb: 'vs. GitHub Gist',
       body: `
         <p>A single GitHub Gist gives you one generic Markdown outline. Real product teams ship to different audiences: SaaS users, mobile app stores, enterprise IT, and internal engineers.</p>
@@ -603,7 +603,7 @@ async function main() {
       title: 'Free Alternative to Smartsheet, Monday & Atlassian Release Templates',
       description:
         'Download Word (.docx), Markdown, and Google Docs release notes templates with zero signup or workspace lock-in.',
-      h1: 'Release Notes Templates Without Tool Lock-In',
+      h1: 'Release notes templates without tool lock-in',
       breadcrumb: 'vs. Smartsheet & Atlassian',
       body: `
         <p>Project management suites like Smartsheet, Monday.com, and Atlassian Confluence offer release note templates, but often require creating an account or keeping notes inside their ecosystem.</p>
@@ -626,7 +626,7 @@ async function main() {
       title: 'Free Release Notes Generator vs. Paid Changelog Software',
       description:
         'When a free browser release notes generator is enough vs. when teams need paid changelog SaaS like ReleasePad, Beamer, or LaunchNotes.',
-      h1: 'Free Generator vs. Paid Changelog Software',
+      h1: 'Free generator vs. paid changelog software',
       breadcrumb: 'vs. Paid Changelog Tools',
       body: `
         <p>If your goal is to draft clean release notes for each version in Word, Google Docs, or GitHub Releases, a free client-side generator covers 100% of the workflow.</p>
