@@ -266,7 +266,7 @@ export default function App() {
                   }}
                 >
                   <FileText className="w-4 h-4" />
-                  Browse 6 Templates
+                  Browse 14 Templates
                 </a>
               </div>
             </div>
@@ -1034,6 +1034,12 @@ export default function App() {
             </a>
             <a href={`${import.meta.env.BASE_URL}examples/`} className="hover:underline">
               Examples
+            </a>
+            <a href={`${import.meta.env.BASE_URL}alternatives/`} className="hover:underline">
+              Alternatives
+            </a>
+            <a href={`${import.meta.env.BASE_URL}templates/release-notes-template-word/`} className="hover:underline">
+              Word Template
             </a>
             <a href={`${import.meta.env.BASE_URL}templates/saas-release-notes/`} className="hover:underline">
               SaaS Template
